@@ -1,0 +1,60 @@
+PANDUAN PEMULA — BACKUP GITHUB DAN JADIKAN KATALOG IKON DI HP
+
+BAGIAN A — FILE YANG DIUNGGAH KE GITHUB
+Isi paket ini:
+1. Code_Katalog.gs — salinan semua kode aplikasi Apps Script.
+2. README.md — keterangan proyek dan cara memperbarui kode.
+3. PANDUAN_GITHUB_DAN_HP.txt — panduan ini.
+
+PENTING: GitHub hanya untuk menyimpan backup kode. Website aktif masih dijalankan oleh Google Apps Script. Mengunggah file .gs ke GitHub tidak membuatnya langsung menjadi aplikasi.
+
+BAGIAN B — UNGGAH FILE KE GITHUB
+1. Buka https://github.com dan masuk/daftar akun.
+2. Klik tombol + di kanan atas, lalu pilih New repository.
+3. Isi nama repository: katalog-web-app
+4. Pilih Private (disarankan untuk menyimpan backup kode pribadi).
+5. Klik Create repository.
+6. Di halaman repository pilih Add file > Upload files.
+7. Buka folder paket ini di komputer, lalu seret file berikut ke halaman GitHub:
+   - Code_Katalog.gs
+   - README.md
+   - PANDUAN_GITHUB_DAN_HP.txt
+8. Klik Commit changes.
+9. Selesai. File kini tersimpan sebagai backup. Tidak perlu mengaktifkan GitHub Pages.
+
+Jangan unggah data pribadi, daftar pelanggan, token, password, atau informasi rahasia. Setelah mengganti PIN admin, jangan menuliskan PIN tersebut di README atau file publik.
+
+BAGIAN C — JADIKAN WEBSITE SEPERTI APLIKASI DI ANDROID
+Cara termudah adalah memakai URL Web App Apps Script, bukan URL GitHub.
+1. Di komputer, buka proyek Apps Script > Deploy > Manage deployments.
+2. Salin Web app URL yang berakhiran /exec.
+3. Kirim URL itu ke HP Anda (misalnya lewat pesan pribadi ke diri sendiri), atau buka dari HP jika sudah tersimpan.
+4. Di HP Android, buka Google Chrome.
+5. Tempel URL /exec pada address bar lalu buka. Pastikan katalog tampil dahulu.
+6. Ketuk menu tiga titik (⋮) Chrome di kanan atas.
+7. Pilih "Install app" atau "Add to Home screen" (nama menu bisa berbeda menurut versi Chrome dan situs).
+8. Konfirmasi Install/Add.
+9. Kembali ke layar utama HP. Ikon katalog akan muncul; ketuk untuk membuka katalog.
+
+Jika menu Install app tidak muncul, pilih Add to Home screen jika tersedia. Jika browser tetap hanya membuat shortcut, shortcut itu tetap dapat membuka website. Tetap perlu koneksi internet.
+
+BAGIAN D — UNTUK IPHONE
+1. Buka URL /exec melalui Safari.
+2. Ketuk tombol Share (kotak dengan panah ke atas).
+3. Pilih Add to Home Screen.
+4. Ubah nama jika perlu, lalu ketuk Add.
+5. Ikon akan muncul di layar utama.
+
+BAGIAN E — UPDATE WEBSITE
+Jika mengubah kode:
+1. Ubah dan simpan kode di Apps Script.
+2. Pilih Deploy > Manage deployments > Edit (ikon pensil).
+3. Pilih New version, lalu klik Deploy.
+4. URL /exec umumnya tetap sama untuk deployment yang diedit.
+5. Perbarui salinan Code_Katalog.gs di GitHub agar backup sama dengan versi terbaru.
+
+CATATAN
+- Ini adalah web app yang ditambahkan ke layar utama, bukan APK Android native dari Play Store.
+- Katalog masih membutuhkan internet karena aplikasi dijalankan oleh Google Apps Script dan data disimpan di Google Sheets.
+- GitHub Pages ditujukan untuk file website statis dan bukan tempat menjalankan backend Apps Script. Jangan pindahkan Code_Katalog.gs ke GitHub Pages dengan harapan ia akan otomatis berjalan.
+- Ganti PIN awal 1234 segera. Jangan menaruh PIN atau data pelanggan di repository GitHub.
